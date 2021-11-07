@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'conversorMoedas'`, () => {
+  it(`should have as title 'Conversor'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('conversorMoedas');
+    expect(app.title).toEqual('Conversor');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('conversorMoedas app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Conversor app is running!');
   });
 });
