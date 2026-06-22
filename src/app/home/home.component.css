@@ -1,0 +1,64 @@
+.form-select{
+    display: flex;
+    justify-content: center!important;
+    text-align: center !important;
+    width: 300px;
+  }
+  
+.center{
+    justify-content: center!important;
+    text-align: center !important;
+    align-items: center;
+  
+}
+  
+.btn-convert{
+    width: 70%;
+}
+
+.bg{
+    background-image: url(https://media.gettyimages.com/vectors/bitcoins-with-binary-code-digital-background-vector-id1269322264?k=20&m=1269322264&s=612x612&w=0&h=DvgZhkimrEAz8FJ6n7h-XBvlC8EjYwYpNPlqKsSScw8=);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.resultado{
+    font-size: 30px;
+    color: white;
+}
+
+button{
+    border: 1px solid white;
+    border-radius: 70px;
+    text-align: center;
+    background-color: white;
+    margin-top: 25px;
+
+}
+
+.row{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 15px;
+    border-radius: 25px;
+    width: 20%;
+    color: white;
+}
+#p{
+    
+    width: 450px;
+    height: 550px;
+}
+#input{
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    border: 0px;
+    border-radius: 15px;
+    margin-top: 35px; 
+}

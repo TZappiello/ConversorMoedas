@@ -1,0 +1,27 @@
+<body id="fundo">
+  
+    <div class="body">
+       
+       <div class="login  text-center form-login">
+         <img src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_1280.png" alt="">
+         <div class="mb-3 row">
+           <div class="col-sm-10">
+             <input [(ngModel)]="email" type="email" class="form-control input" id="" placeholder="E-mail" required="true" value="">
+           </div>
+         </div>
+         <div class="mb-3 row">
+           <div class="col-sm-10">
+             <input  [(ngModel)]="senha" name="" type="password" required="true" placeholder="Senha" class="form-control input" id="inputPassword">
+           </div>
+         </div>
+         <button  (click)="fazerLogin()" class="btn bg-primary text-white botao1"  > Acessar</button>
+         <br><br>
+         <button (click)="liberarCadastro()" class="btn bg-primary text-white botao2">cadastratar</button>
+       </div>
+       <div class="col-6">
+         <app-cadastro *ngIf="mostrarCadastro" ></app-cadastro>
+       </div>
+     </div>
+     
+     
+     

@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+   }
+   
+    #fundo {
+     margin: 0%;
+     padding: 0%;
+     height: 100%;
+     width: 100%;
+     background-image: url(https://cdn.discordapp.com/attachments/882376889614868500/905983800243265536/purple-1741713_1920.jpg);
+     
+   } 
+   
+   
+   .body{
+     background-color: #3f3f3f73	;
+     width: 100%;
+     max-width: 500px;
+     margin: auto;
+     margin-top: 50px;
+     padding: 25px;
+     border-radius: 25px;
+   }
+   
+   .body input{
+     width: 121%;
+     text-align: center;
+   }
+   
+   .body img{
+     width: 100px;
+     border-radius: 50%;
+     margin-bottom: 25px;
+   }
+   
+   button {
+     width: 100%;
+   }
+   
+   .input {
+     width: 100%;
+   }
+   
+   .form-control{
+   
+       width: 30%;
+     }
+     
+   .form-login{
+     
+      justify-content: center;
+     
+     }
+   
+     

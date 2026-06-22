@@ -1,0 +1,48 @@
+<body>
+
+    <div *ngIf="false">
+      <b>Você já tem cadastro</b>
+    </div>
+    <div *ngIf="true">
+  
+      <form [formGroup]="formCadastro" #form="ngForm" class="ng">
+  
+        <fieldset>
+          <legend><b>Ficha de Cadastro</b></legend>
+          <br>
+          <br>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Nome</label>
+            <div class="col-sm-10">
+              <input formControlName="nome" type="text" class="form-control" id="inputNome">
+              <small *ngIf="formCadastro.get('email')?.invalid" class="text-danger"> Nome é obrigatorio </small>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input formControlName="email" type="text" class="form-control" id="staticEmail" value="">
+              <small *ngIf="formCadastro.get('email')?.invalid" class="text-danger"> Email é obrigatorio </small>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Data de nascimento</label>
+            <div class="col-sm-10">
+              <input formControlName="data" type="date" class="form-control" id="inputData">
+              <small *ngIf="formCadastro.get('email')?.invalid" class="text-danger"> Coloque uma data válida </small>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" formControlName="senha" class="form-control" id="inputPassword" maxlength="8">
+              <small *ngIf="formCadastro.get('email')?.invalid" class="text-danger"> Coloque uma data válida </small>
+            </div>
+          </div>
+          <button (click)="cadastratar()" class="btn text-white bg-primary">Cadastrar</button>
+        </fieldset>
+      </form>
+  
+    </div>
+  
+  </body>

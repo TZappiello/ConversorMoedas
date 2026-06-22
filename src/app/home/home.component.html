@@ -1,0 +1,22 @@
+<div class="bg">
+
+    <div id="p" class="row text-center prin center">
+      <h1>Selecione a moeda</h1>
+      <select [(ngModel)]="moeda1" class="form-select" aria-label="Default select example" aria-placeholder="Selecione a moeda">
+        <option disabled="true">Selecione a moeda para converter</option>
+        <option *ngFor="let item of lista" [value]="item.high">{{item.name}}</option>
+      </select>
+      
+      <input  id="input" [(ngModel)]="moeda2" type="text" placeholder="Digite a quantidade desejada...">
+      <button (click)="fazerConversao()" class="btn-primary btn-convert"  style="color: rgb(0, 0, 0); font-size : '35px'" >Converter</button>
+  
+      <div class="resultado">
+        <b>Resultado:</b>
+  
+        <p>R$:{{resultadoConvercao}}</p>
+  
+      </div>
+    </div>
+  </div>
+  
+  

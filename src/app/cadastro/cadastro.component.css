@@ -1,0 +1,28 @@
+.mb-3{
+    width: 100%;
+}
+
+.ng{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    width: 25%;
+    color: white;
+}
+
+.cadast{
+    text-align: center;
+}
+
+legend {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+    color: black;
+}
